@@ -1,4 +1,4 @@
-package Week02.Exercise03.Book;
+package Week02.Exercise04.Book;
 
 public class Book {
 
@@ -42,11 +42,11 @@ public class Book {
         return pages;
     }
 
-    private void setTitle(String title) {
+    void setTitle(String title) {
         this.title = title;
     }
 
-    private void setPrice(double price) {
+    void setPrice(double price) {
         this.price = price;
     }
 

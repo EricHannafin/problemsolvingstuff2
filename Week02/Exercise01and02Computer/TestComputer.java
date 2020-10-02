@@ -1,4 +1,4 @@
-package Week02.Computer;
+package Week02.Exercise01and02Computer;
 
 import javax.swing.*;
 
@@ -6,7 +6,7 @@ public class TestComputer {
     public static void main(String[] args) {
         String output = "";
 
-        Computer c1 = new Computer("Acer","Laptop",3.00,8,400.00);
+        Computer c1 = new Computer();
 
         output += "Calling the no-argument Computer constructor. " +
                 "The first Computer object details are: \n\n" + c1.toString();
