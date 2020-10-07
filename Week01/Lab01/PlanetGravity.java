@@ -1,4 +1,4 @@
-package Week01;
+package Week01.Lab01;
 
 import java.util.Scanner;
 //import java.lang.*;

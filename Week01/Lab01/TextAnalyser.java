@@ -1,4 +1,4 @@
-package Week01;
+package Week01.Lab01;
 
 //TextAnalyser.java
 /*This program reads in 3 pieces of text and determines a number of pieces

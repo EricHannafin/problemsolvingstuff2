@@ -1,4 +1,4 @@
-package Week01;
+package Week01.Lab01;
 
 //HeightStats.java
 /*This program reads in a set of 6 height values, validates each one and then processes them to determine

@@ -1,66 +1,73 @@
 package Week02.Exercise04.Book;
 
+//Book.java
+/*An instantiable class which defines a Book, this version is based on exercise 5 which
+ * includes additional code in the mutators to do some basic input validation*/
+
 public class Book {
+    String title;
+    double price;
+    String ISBN;
+    int pages;
 
-    private String title;
-    private double price;
-    private String isbn;
-    private int pages;
-
-    public Book() {
-        title = "Not available";
-        price = 0;
-        isbn = "Not available";
-        pages = 0;
-
+    public Book(){
+        this("Title Not Available",0.00,"ISBN Not Available",0);
     }
 
-    public Book(String title, double price, String isbn, int pages) {
+    public Book(String title, double price, String ISBN, int pages) {
         setTitle(title);
         setPrice(price);
-        setISBN(isbn);
+        setISBN(ISBN);
         setPages(pages);
     }
 
     public String getTitle() {
-
         return title;
     }
 
-    public double getPrice() {
+    public void setTitle(String title) {
+        if(title == null || title.equals(""))
+            this.title = "No Valid Title Supplied";
+        else
+            this.title = title;
+    }
 
+    public double getPrice() {
         return price;
     }
 
-    public String getISBN() {
+    public void setPrice(double price) {
+        if(price<0 || price>50000)
+            this.price = 0;
+        else
+            this.price = price;
+    }
 
-        return isbn;
+    public String getISBN() {
+        return ISBN;
+    }
+
+    public void setISBN(String ISBN) {
+        if(ISBN == null || ISBN.equals(""))
+            this.ISBN = "No Valid ISBN Supplied";
+        else
+            this.ISBN = ISBN;
     }
 
     public int getPages() {
-
         return pages;
     }
 
-    void setTitle(String title) {
-        this.title = title;
-    }
-
-    void setPrice(double price) {
-        this.price = price;
-    }
-
-    private void setISBN(String isbn) {
-        this.isbn = isbn;
-    }
-
-    private void setPages(int pages) {
-        this.pages = pages;
+    public void setPages(int pages) {
+        if(pages<0 || pages>4000)
+            this.pages = 0;
+        else
+            this.pages = pages;
     }
 
     public String toString() {
-        return  "Title: " + getTitle() + "   Price: " + getPrice() + "   ISBN: " + getISBN()
-                + "   Pages: " + getPages();
+        return "Title: " + getTitle() + "  Price: " + getPrice() +
+                "  ISBN: " + getISBN() + "  Number of Pages: " + getPages();
     }
 
 

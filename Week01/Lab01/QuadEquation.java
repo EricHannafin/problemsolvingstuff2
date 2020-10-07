@@ -1,4 +1,4 @@
-package Week01;
+package Week01.Lab01;
 
 //Exercise1.java
 /*This program calculates the roots of a quadratic and displays them along with their type*/

@@ -1,4 +1,4 @@
-package Week01;
+package Week01.Lab01;
 
 //NumbersMenu.java
 /*This program reads in a sequence of up to 10 whole numbers, one at a time, from the user

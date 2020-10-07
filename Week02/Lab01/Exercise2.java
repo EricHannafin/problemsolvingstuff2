@@ -1,4 +1,4 @@
-package Week02;
+package Week02.Lab01;
 
 import javax.swing.*;
 

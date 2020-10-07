@@ -1,4 +1,4 @@
-package Week01;
+package Week01.Lab01;
 //SnackDealJava
 import javax.swing.*;
 
