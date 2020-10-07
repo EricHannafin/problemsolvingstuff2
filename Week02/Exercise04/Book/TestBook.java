@@ -17,7 +17,7 @@ public class TestBook {
         Font font = new Font("monospaced",Font.PLAIN,12);
         textArea.setFont(font);
 
-        //textArea.setText(String.format("%-25s%-9s%-25s%s","Title","Price","ISBN","Pages"));
+        textArea.setText(String.format("%-25s%-9s%-25s%s","Title","Price","ISBN","Pages"));
 
 
         title = JOptionPane.showInputDialog("Please enter the title of your favourite book");

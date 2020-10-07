@@ -1,6 +1,6 @@
 package Week02.Exercise01and02Computer;
 
-public class Computer {
+    public class Computer {
     private String manufacturer;
     private String type;
     private double speed;
