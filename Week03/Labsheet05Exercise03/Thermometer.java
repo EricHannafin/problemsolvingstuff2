@@ -5,9 +5,9 @@ public class Thermometer {
 
 
     public Thermometer() {
-        currentTemp = 0;
-        maxTemp = Integer.MAX_VALUE;
-        minTemp = Integer.MIN_VALUE;
+        this.currentTemp = 0;
+        this.maxTemp = Integer.MAX_VALUE;
+        this.minTemp = Integer.MIN_VALUE;
     }
 
     public Thermometer(int currentTemp) {
