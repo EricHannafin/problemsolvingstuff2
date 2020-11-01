@@ -48,10 +48,18 @@ public class Employee {
 
     @Override
     public String toString() {
+
+        String insuranceText="";
+
+        if(getInsurance()==null)
+            insuranceText += "No insurance details";
+        else
+            insuranceText += getInsurance();
+
         return "\nEmployee: " +
                 "\nName: " + getName() +
                 "\nID: " + getId() +
                 "\nAddress: " + getAddress()
-                + getInsurance();
+                + insuranceText;
     }
 }

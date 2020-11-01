@@ -9,7 +9,8 @@ import java.awt.event.*;
 import java.awt.*;
 import java.util.Arrays;
 
-public class NamesGUI{
+public class
+NamesGUI{
 
     JButton longestButton, searchButton;
     JTextField nameField;
